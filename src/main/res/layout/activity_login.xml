@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textosLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="-Bienvenido a Movitext-\n\nREGISTRATE uwu"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imagenLogin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textosLogin"
+        app:civ_border_width="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/hola" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagenLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="Ingresar Numero"
+        android:padding="10dp"
+        android:background="@drawable/textos"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/enviar_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numero"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/botones"
+        android:textColor="#ffffff"
+        android:text="Enviar"
+        android:textSize="18dp" />
+    <EditText
+        android:id="@+id/codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/imagenLogin"
+        android:layout_marginTop="30dp"
+        android:hint="Ingresar codigo"
+        android:background="@drawable/textos"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:inputType="phone"/>
+
+    <Button
+        android:id="@+id/enviar_codigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/codigo"
+        android:layout_marginTop="20dp"
+        android:text="Enviar codigo"
+        android:textColor="#ffffff"
+        android:background="@drawable/botones"
+        android:visibility="gone"
+        android:textSize="18dp"/>
+
+</RelativeLayout>
